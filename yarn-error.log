@@ -1,0 +1,32 @@
+Arguments: 
+  /Users/user/.nvm/versions/node/v8.16.0/bin/node /usr/local/Cellar/yarn/1.16.0/libexec/bin/yarn.js add express
+
+PATH: 
+  /Users/user/.nvm/versions/node/v8.16.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  8.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: read ECONNRESET
+      at TLSWrap.onread (net.js:622:25)
+
+npm manifest: 
+  {
+    "name": "try-express",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
