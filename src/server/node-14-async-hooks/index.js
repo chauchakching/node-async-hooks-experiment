@@ -7,11 +7,19 @@ const log = require('./log')
 const storage = require('./storage')
 
 const app = express()
+const port = 3333
 
 const context = {}
 let indent = 0
 
 function server() {
+  app.get('/', function(req, res) {
+    asyncHook.enable()
+    asyncHook.disable()
+
+    res.send('pong')
+  })
+
   app.get('/name/:name', async function (req, res) {
     const { name } = req.params
     logSync('-------------------------------')
@@ -93,9 +101,9 @@ const asyncHook = AsyncHooks.createHook({
 server()
 
 clearLogSync()
-app.listen(3333)
+app.listen(port)
 
-// console.log('starting server (node 14)...')
+console.log(`starting server on port ${port} (node 14)...`)
 
 // run client
 exec(`node ${path.join(__dirname, '..', '..', 'client')}`)
