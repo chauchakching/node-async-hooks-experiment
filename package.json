@@ -7,7 +7,7 @@
     "axios": "^0.19.2",
     "cls-hooked": "^4.2.2",
     "continuation-local-storage": "^3.2.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nodemon": "^2.0.4"
   },
   "devDependencies": {
